@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Password</title>
+    <style>
+        :root{
+            --soft-pink:#C7C7C7;
+            --text-input:#F7F7F7;
+            --hospital-green:#ACD982;
+            --white:#FFFFFF;
+            --black:#000000;
+            --sm:14px;
+            --mm:16px;
+            --lg:20px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .super-container{
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            place-content: center;
+        }
+        .text-container{
+            display: grid;
+            grid-template-rows: auto auto;
+            width: 320px;
+            
+        }
+        .container-logo{
+            width: 100%;
+            display: grid;
+            justify-items: center;
+            margin-bottom: 44px;
+            display: none;
+        }
+        .logo{
+            width: 160px;
+        }
+        .title-container{
+            width: 100%;
+            display: grid;
+            justify-items: center;
+        }
+        .title{
+            font-size: var(--lg);
+            margin-bottom: 8px;
+        }
+        .sub-title{
+            color: var(--soft-pink);
+            margin-bottom: 16px;
+            font-weight: 300;
+            font-size: var(--mm);
+        }
+        .form-container{
+            display: grid;
+            grid-template-rows: auto;
+            width: 320px;
+        }
+        .form{
+            display: grid;
+            grid-template-rows: auto;
+        }
+        .label{
+            font-size: var(--sm);
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .input{
+            background-color: var(--text-input);
+            border: none;
+            border-radius: 6px;
+            font-size: var(--mm);
+            height: 28px;
+            padding-left: 8px;
+            margin-bottom: 16px;
+        }
+        .input.input-password{
+            
+        }
+        .input-password{
+
+        }
+        .button{
+            background-color: var(--hospital-green);
+            height: 36px;
+            border: none;
+            border-radius: 8px;
+            color: var(--white);
+            font-size: var(--mm);
+            letter-spacing: 0.5px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        .button-confirm{
+            margin-top: 8px;
+        }
+
+        @media (max-width:640px) {
+            .container-logo{
+                display: grid;
+        }
+        }
+    </style>
+
+</head>
+<body>
+    <main class="super-container">
+        <section class="text-container">
+
+            <figure class="container-logo">
+                <img src="../logos/logo_yard_sale.svg" alt="logo" class="logo">
+            </figure>
+
+            <article class="title-container">
+                <h1 class="title">Create a new password</h1>
+                <p class="sub-title">Enter a new password for your account</p>
+            </article>
+
+        </section>
+
+        <section class="form-container">
+            <form action="/" class="form">
+                <label for="password" class="label">Password</label>
+                <input class="input input-password" type="text" placeholder="*********" id="password">
+        
+                <label for="new-password" class="label">Re-enter password</label>
+                <input type="password" class="input input-password" id="new-password" placeholder="*********">
+        
+                <input type="submit" value="Confirm" class="button button-confirm">
+            </form>        
+        </section>        
+    </main>
+
+
+</body>
+</html>

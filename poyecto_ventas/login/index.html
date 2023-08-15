@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Login</title>
+    <style>
+        :root{
+            --soft-pink:#C7C7C7;
+            --text-input:#F7F7F7;
+            --hospital-green:#ACD982;
+            --white:#FFFFFF;
+            --black:#000000;
+            --sm:14px;
+            --mm:16px;
+            --lg:20px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .main-container_login{
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            place-content: center;
+            position: relative;
+        }
+        .container-img_login{
+            width: 320px;
+            display: grid;
+            justify-items: center;
+            margin-bottom: 44px;
+            display: none;
+            
+        }
+        .container-img_login img{
+            width: 160px;
+        }
+        .form{
+            width: 320px;
+            
+            display: grid;
+            
+            
+        }
+        .form-text{
+            display: grid;
+        }
+        .lbl{
+            font-size: var(--sm);
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+        .lbl-emailAddress_login{
+
+        }
+        .lbl-password_login{
+
+        }
+        .input{
+            background-color: var(--text-input);
+            border: none;
+            border-radius: 6px;
+            font-size: var(--mm);
+            height: 28px;
+            padding-left: 8px;
+            margin-bottom: 16px;
+        }
+        .input-email_login{
+
+        }
+        .input-password_login{
+
+        }
+        .button{
+            color: var(--white);
+            background-color: var(--hospital-green);
+            border: none;
+            font-size: var(--mm);
+            font-weight: 700;
+            height: 36px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .button-logIn_login{
+            margin-top: 8px;
+            margin-bottom: 30px;
+        }
+        .text-forgat{
+            text-align: center;
+        }
+        .text-forgat a{
+            text-decoration: none;
+            font-size: var(--sm);
+            color: var(--hospital-green);
+        }
+        .prueba{
+            width: 100%;
+            /* background-color: red; */
+        }
+        .sing-up_button{
+            position: absolute;
+            bottom:36px;
+            /* top:50vh; */
+            margin: 0 auto;
+            width: 320px;
+            color: var(--hospital-green);
+            height: 36px;
+            border: 1px solid var(--hospital-green);
+            border-radius: 8px;
+            background-color: var(--white);
+            cursor: pointer;
+            font-size: var(--mm);
+        }
+        .opcional{
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: var(--lg);
+        }
+        .opcional_subtext{
+            margin-bottom: 16px;
+            font-size: var(--mm);
+            color: var(--soft-pink);
+            text-align: center;
+            font-weight: 300;
+        }
+        @media (max-width:640px){
+            .container-img_login{
+                display: grid;
+                font-weight: 300;
+            }
+            .opcional{
+                display: none;
+            }
+            .opcional_subtext{
+                display: none;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <main class="main-container_login">
+        <figure class="container-img_login">
+            <img src="../logos/logo_yard_sale.svg" alt="logo">
+        </figure>
+
+        <form action="#" class="form">
+            <article class="form-text">
+                <h1 class="opcional">Enjoy</h1>
+                <p class="opcional_subtext">Enter your details to start</p>
+                <label class="lbl lbl-emailAddress_login" for="">Email address</label>
+                <input class="input input-email_login" placeholder="your_email@example.com" type="email">
+    
+                <label class="lbl lbl-password_login" for="">Password</label>
+                <input class="input input-password_login" placeholder="*********" type="password">
+    
+                <input class="button button-logIn_login" type="submit" value="Log in">
+    
+                <p class="text-forgat"><a href="#">Forgat my password</a></p>
+            </article>
+
+        </form>
+
+        <section class="prueba">
+            <input type="submit" value="Sing up" class="sing-up_button">
+        </section>
+    </main>
+</body>
+</html>

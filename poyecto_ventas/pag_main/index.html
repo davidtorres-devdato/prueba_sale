@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Sale</title>
+    <style>
+        :root{
+            --soft-pink:#C7C7C7;
+            --text-input:#F7F7F7;
+            --hospital-green:#ACD982;
+            --white:#FFFFFF;
+            --black:#000000;
+            --sm:14px;
+            --mm:16px;
+            --lg:20px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .main-container_productos{
+
+        }
+        .cards-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fill,220px);
+            gap: 0px 15px;
+            justify-content: center;
+            /* display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 0; */
+        }
+        .card-base{
+            width: 220px;
+            height: 320px;
+            /* border-radius: 16px; */
+            /* overflow: hidden; */
+            /* background-color: lime; */
+            margin-top: 15px;
+            border-radius: 30px;
+            background-color: var(--black);
+            /* margin: 20px 10px; */
+        }
+        .container-img_cards{
+            width: 220px;
+            height: 260px;
+            overflow: hidden;
+            border-radius: 30px;
+        }
+        .card-img{
+            width: 100%;
+            height: inherit;
+            object-fit: cover;
+            overflow: hidden;
+            /* border-radius: 30px; */
+        }
+        .card-description{
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 14px;
+            align-items: center;
+        }
+        .container-card_text{
+
+        }
+        .price{
+            font-size: var(--mm);
+            font-weight: 500;
+            color: var(--white);
+        }
+        .description{
+            font-size: var(--mm);
+            font-weight: 300;
+            color: var(--soft-pink);
+        }
+        .card-car_sale{
+
+        }
+        @media (max-width:640px){
+            .cards-container{           
+            grid-template-columns: repeat(auto-fill,170px);
+            gap: 10px;
+        }
+        .card-base{
+            width: 170px;
+            height: 255px;
+                  
+        }
+        .container-img_cards{
+            width: 170px;
+            height: 195px;
+        }
+        .card-car_sale{
+            width: 35px;
+            height: 35px;
+        }   
+        .price{
+            font-size: var(--sm);
+        }
+        .description{
+            font-size: var(--sm);
+        }
+        }
+    </style>
+</head>
+<body>
+    <main class="main-container_productos">
+        <section class="cards-container">
+
+            <article class="card-base">
+                <figure class="container-img_cards">
+                    <img src="https://images.pexels.com/photos/3475680/pexels-photo-3475680.jpeg?auto=compress&cs=tinysrgb&w=400" class="card-img" alt="gato">
+                </figure>
+                <section class="card-description">
+                    <section class="container-card_text">
+                        <p class="price">$340</p>
+                        <p class="description">Pitbull</p>
+                    </section>
+                    <img src="../icons/bt_add_to_cart.svg" class="card-car_sale" alt="">
+                </section>
+            </article>
+
+            <article class="card-base">
+                <figure class="container-img_cards">
+                    <img src="https://images.pexels.com/photos/3687770/pexels-photo-3687770.jpeg?auto=compress&cs=tinysrgb&w=400" class="card-img" alt="gato">
+                </figure>
+                <section class="card-description">
+                    <section class="container-card_text">
+                        <p class="price">$340</p>
+                        <p class="description">Pitbull</p>
+                    </section>
+                    <img src="../icons/bt_add_to_cart.svg" class="card-car_sale" alt="">
+                </section>
+            </article>
+
+            <article class="card-base">
+                <figure class="container-img_cards">
+                    <img src="https://images.pexels.com/photos/7483192/pexels-photo-7483192.jpeg?auto=compress&cs=tinysrgb&w=400" class="card-img" alt="gato">
+                </figure>
+                <section class="card-description">
+                    <section class="container-card_text">
+                        <p class="price">$340</p>
+                        <p class="description">Pitbull</p>
+                    </section>
+                    <img src="../icons/bt_add_to_cart.svg" class="card-car_sale" alt="">
+                </section>
+            </article>
+
+            <article class="card-base">
+                <figure class="container-img_cards">
+                    <img src="https://images.pexels.com/photos/16393501/pexels-photo-16393501/free-photo-of-animal-perro-mascota-mono.jpeg?auto=compress&cs=tinysrgb&w=400" class="card-img" alt="gato">
+                </figure>
+                <section class="card-description">
+                    <section class="container-card_text">
+                        <p class="price">$340</p>
+                        <p class="description">Pitbull</p>
+                    </section>
+                    <img src="../icons/bt_add_to_cart.svg" class="card-car_sale" alt="">
+                </section>
+            </article>
+
+            <article class="card-base">
+                <figure class="container-img_cards">
+                    <img src="https://images.pexels.com/photos/15955694/pexels-photo-15955694/free-photo-of-animal-perro-mascota-mono.jpeg?auto=compress&cs=tinysrgb&w=400" class="card-img" alt="gato">
+                </figure>
+                <section class="card-description">
+                    <section class="container-card_text">
+                        <p class="price">$340</p>
+                        <p class="description">Pitbull</p>
+                    </section>
+                    <img src="../icons/bt_add_to_cart.svg" class="card-car_sale" alt="">
+                </section>
+            </article>
+
+            <article class="card-base">
+                <figure class="container-img_cards">
+                    <img src="https://images.pexels.com/photos/14354571/pexels-photo-14354571.jpeg?auto=compress&cs=tinysrgb&w=400" class="card-img" alt="gato">
+                </figure>
+                <section class="card-description">
+                    <section class="container-card_text">
+                        <p class="price">$340</p>
+                        <p class="description">Pitbull</p>
+                    </section>
+                    <img src="../icons/bt_add_to_cart.svg" class="card-car_sale" alt="">
+                </section>
+            </article>
+
+            <article class="card-base">
+                <figure class="container-img_cards">
+                    <img src="https://images.pexels.com/photos/39310/wolf-predator-hunter-canis-lupus-39310.jpeg?auto=compress&cs=tinysrgb&w=400" class="card-img" alt="gato">
+                </figure>
+                <section class="card-description">
+                    <section class="container-card_text">
+                        <p class="price">$340</p>
+                        <p class="description">Pitbull</p>
+                    </section>
+                    <img src="../icons/bt_add_to_cart.svg" class="card-car_sale" alt="">
+                </section>
+            </article>
+
+            <article class="card-base">
+                <figure class="container-img_cards">
+                    <img src="https://media.istockphoto.com/id/1409265440/es/foto/perro-de-raza-mast%C3%ADn-tibetano-el-animal-est%C3%A1-parado-en-el-c%C3%A9sped.jpg?b=1&s=612x612&w=0&k=20&c=DYbXIDOHptbyxbfqg94BK22FGGAZs4MswBuRKYDAyPU=" class="card-img" alt="gato">
+                </figure>
+                <section class="card-description">
+                    <section class="container-card_text">
+                        <p class="price">$340</p>
+                        <p class="description">Pitbull</p>
+                    </section>
+                    <img src="../icons/bt_add_to_cart.svg" class="card-car_sale" alt="">
+                </section>
+            </article>
+
+            <article class="card-base">
+                <figure class="container-img_cards">
+                    <img src="https://images.pexels.com/photos/14755484/pexels-photo-14755484.jpeg?auto=compress&cs=tinysrgb&w=400" class="card-img" alt="gato">
+                </figure>
+                <section class="card-description">
+                    <section class="container-card_text">
+                        <p class="price">$340</p>
+                        <p class="description">Pitbull</p>
+                    </section>
+                    <img src="../icons/bt_add_to_cart.svg" class="card-car_sale" alt="">
+                </section>
+            </article>
+
+            <article class="card-base">
+                <figure class="container-img_cards">
+                    <img src="https://images.pexels.com/photos/17819194/pexels-photo-17819194/free-photo-of-perro-exterior-mascota-mono.jpeg?auto=compress&cs=tinysrgb&w=400" class="card-img" alt="gato">
+                </figure>
+                <section class="card-description">
+                    <section class="container-card_text">
+                        <p class="price">$340</p>
+                        <p class="description">Pitbull</p>
+                    </section>
+                    <img src="../icons/bt_add_to_cart.svg" class="card-car_sale" alt="">
+                </section>
+            </article>
+
+            <article class="card-base">
+                <figure class="container-img_cards">
+                    <img src="https://images.pexels.com/photos/236622/pexels-photo-236622.jpeg?auto=compress&cs=tinysrgb&w=400" class="card-img" alt="gato">
+                </figure>
+                <section class="card-description">
+                    <section class="container-card_text">
+                        <p class="price">$340</p>
+                        <p class="description">Pitbull</p>
+                    </section>
+                    <img src="../icons/bt_add_to_cart.svg" class="card-car_sale" alt="">
+                </section>
+            </article>
+
+        </section>
+    </main>
+</body>
+</html>
